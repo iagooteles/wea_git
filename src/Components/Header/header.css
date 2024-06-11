@@ -1,0 +1,50 @@
+.header-container {
+  width: 100%;
+  padding: 1.1rem 2rem;
+
+  color: #fff;
+  position: absolute;
+}
+
+.header-content {
+  margin: 0 15rem;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-name {
+  font-size: 1.2rem;
+  transition: color 1.2s;
+  margin-top: 6px;
+}
+
+.app-name:hover {
+  cursor: default;
+  color: #284958;
+}
+
+.link-home {
+  animation: color-change 6s infinite;
+  transition: color 1.2s;
+}
+
+@keyframes color-change {
+  0% { color: green; }
+  25% {color: blue;}
+  50% { color: white; }
+  75% {color: red;}
+  100% { color: green; }
+}
+
+@media (max-width:1020px) {
+  .header-content {
+    margin: 0 6rem;
+  }
+}
+
+@media (max-width:600px) {
+  .header-content {
+    margin: 0 2rem;
+  }
+}

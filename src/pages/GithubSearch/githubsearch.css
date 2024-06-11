@@ -1,0 +1,156 @@
+.githubSearch-container {  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-color: rgb(4, 70, 212);
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.avatar {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 360px;
+}
+
+.profile-input {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 8px;
+}
+
+.profile-input div {
+  width: 75%;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.profile-input input {
+  width: 95%;
+  background-color: transparent;
+  border: 0;
+  height: 46px;
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.profile-input input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-input button {
+  width: 75%;
+  height: 46px;
+  border-radius: 4px;
+  border: 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  margin-top: 8px;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile-input button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile-input button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.profile-input button:hover span{
+  padding-right: 25px;
+}
+
+.profile-input button:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+
+.profileInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 18px 50px;
+}
+
+.profileInfoContainer img {
+  width: 280px;
+  border-radius: 50%;
+}
+
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  letter-spacing: 1.4px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  line-height: 50px;
+}
+
+.profileContent a {
+  color: #fff;
+}
+
+.github-icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .profileInfoContainer a {
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 680px) {
+  .profileInfoContainer img {
+    width: 160px;
+  }
+
+  .profileInfoContainer a {
+    max-width: 15ch;
+  }
+
+  .profileContent {
+    margin-left: 2rem;
+  }
+}
