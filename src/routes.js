@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from './pages/Home';
-import MyWeather from './pages/Myweather'
-import GithubSearch from './pages/GithubSearch'
-import Error from './pages/Error'
+import MyWeather from './pages/Myweather';
+import GithubSearch from './pages/GithubSearch';
+import Error from './pages/Error';
 
 function RoutesApp() {
   return(
