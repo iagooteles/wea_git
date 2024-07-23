@@ -6,7 +6,7 @@ const baseURLWeather = 'http://api.weatherapi.com/v1/current.json';
 
 export async function getWeatherData(city) {
   try {
-    const {data} = await axios.get(baseURLWeather + `?key=${process.env.WEATHER_API_KEY}&q=${city}`);
+    const {data} = await axios.get(baseURLWeather + `?key=fdca5cda802849a59ff191208241106&q=${city}`);
     return data;
   } catch(err) {
     throw err;
